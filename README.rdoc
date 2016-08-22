@@ -1,37 +1,33 @@
-Setup Steps
-===========
+=== Setup Steps
 
 rails new spree_travel_demo3
 
-### Add to Gemfile.
+=== Add to Gemfile.
 
-```
-gem 'spree', :github => 'spree/spree', :branch => '3-0-stable'
-gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '3-0-stable'
-gem 'spree_travel_core', :github => 'openjaf/spree_travel_core', :branch => '3-0-stable'
-gem 'spree_travel_cruise', :github => 'openjaf/spree_travel_cruise', :branch => '3-0-stable'
-gem 'spree_travel_hotel', :github => 'openjaf/spree_travel_hotel', :branch => '3-0-stable'
-gem 'spree_travel_tour', :github => 'openjaf/spree_travel_tour', :branch => '3-0-stable'
-gem 'spree_travel_car', :github => 'openjaf/spree_travel_car', :branch => '3-0-stable'
-gem 'spree_travel_sample', github: 'openjaf/spree_travel_sample', branch: '3-0-stable'
-```
+- gem 'spree', :github => 'spree/spree', :branch => '3-0-stable'
+- gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '3-0-stable'
+- gem 'spree_travel_core', :github => 'openjaf/spree_travel_core', :branch => '3-0-stable'
+- gem 'spree_travel_cruise', :github => 'openjaf/spree_travel_cruise', :branch => '3-0-stable'
+- gem 'spree_travel_hotel', :github => 'openjaf/spree_travel_hotel', :branch => '3-0-stable'
+- gem 'spree_travel_tour', :github => 'openjaf/spree_travel_tour', :branch => '3-0-stable'
+- gem 'spree_travel_car', :github => 'openjaf/spree_travel_car', :branch => '3-0-stable'
+- gem 'spree_travel_sample', github: 'openjaf/spree_travel_sample', branch: '3-0-stable'
 
-### Run in Order
 
-```
-bundle install
-rails g spree:install
-rails g spree_travel_core:install
-rails g spree_travel_hotel:install
-rails g spree_travel_car:install
-rails g spree_travel_cruise:install
-rails g spree_travel_tour:install
-rake spree_travel_sample:load:hotel
-rake spree_travel_sample:load:car
-rake spree_travel_sample:load:cruise
-rake spree_travel_sample:load:tour
-```
+=== Run in Order
 
-### Road Map
+- bundle install
+- rails g spree:install
+- rails g spree_travel_core:install
+- rails g spree_travel_hotel:install
+- rails g spree_travel_car:install
+- rails g spree_travel_cruise:install
+- rails g spree_travel_tour:install
+- rake spree_travel_sample:load:hotel
+- rake spree_travel_sample:load:car
+- rake spree_travel_sample:load:cruise
+- rake spree_travel_sample:load:tour
 
-[SpreeTravel RoadMap](https://trello.com/b/Fralkz09/spreetravel)
+=== Road Map
+
+{SpreeTravel RoadMap}[https://trello.com/b/Fralkz09/spreetravel]
