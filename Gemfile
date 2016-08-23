@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,9 +47,9 @@ group :development do
 end
 gem 'spree', :github => 'spree/spree', :branch => '3-0-stable'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '3-0-stable'
-gem 'spree_travel_core', :path => '/home/raul/work/spree_travel/spree_travel_core', :branch => '3-0-stable'
-gem 'spree_travel_cruise', :path => '/home/raul/work/spree_travel/spree_travel_cruise', :branch => '3-0-stable'
-gem 'spree_travel_hotel', :path => '/home/raul/work/spree_travel/spree_travel_hotel', :branch => '3-0-stable'
-gem 'spree_travel_tour', :path => '/home/raul/work/spree_travel/spree_travel_tour', :branch => '3-0-stable'
-gem 'spree_travel_car', :path => '/home/raul/work/spree_travel/spree_travel_car', :branch => '3-0-stable'
-gem 'spree_travel_sample', :path => '/home/raul/work/spree_travel/spree_travel_sample', branch: '3-0-stable'
+gem 'spree_travel_core', :github => 'openjaf/spree_travel_core', :branch => '3-0-stable'
+gem 'spree_travel_cruise', :github => 'openjaf/spree_travel_cruise', :branch => '3-0-stable'
+gem 'spree_travel_hotel', :github => 'openjaf/spree_travel_hotel', :branch => '3-0-stable'
+gem 'spree_travel_tour', :github => 'openjaf/spree_travel_tour', :branch => '3-0-stable'
+gem 'spree_travel_car', :github => 'openjaf/spree_travel_car', :branch => '3-0-stable'
+gem 'spree_travel_sample', :github => 'openjaf/spree_travel_sample', branch: '3-0-stable'

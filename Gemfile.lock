@@ -1,4 +1,55 @@
 GIT
+  remote: git://github.com/openjaf/spree_travel_car.git
+  revision: 0226d11b3e1bd2ff988ea44f07c72e8ed267ebf7
+  branch: 3-0-stable
+  specs:
+    spree_travel_car (3.0.0)
+      spree_core (~> 3.0.0)
+      spree_travel_core
+
+GIT
+  remote: git://github.com/openjaf/spree_travel_core.git
+  revision: bc0bfc1ab24f6e13a695ff152243c04b54e0ae70
+  branch: 3-0-stable
+  specs:
+    spree_travel_core (3.0.0)
+      spree (~> 3.0.0)
+
+GIT
+  remote: git://github.com/openjaf/spree_travel_cruise.git
+  revision: 94e95767d933aa48576380f4720fd8c4cf67b4eb
+  branch: 3-0-stable
+  specs:
+    spree_travel_cruise (3.0.0)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/openjaf/spree_travel_hotel.git
+  revision: 093f62df7b72c8b415a76bfc87dd00d9c7083f3d
+  branch: 3-0-stable
+  specs:
+    spree_travel_hotel (3.0.0)
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/openjaf/spree_travel_sample.git
+  revision: 2ce7fb423c23ef0c1d17f009c292b5b90bfe9a0f
+  branch: 3-0-stable
+  specs:
+    spree_travel_sample (3.0.0)
+      colored
+      spree_core (~> 3.0.0)
+
+GIT
+  remote: git://github.com/openjaf/spree_travel_tour.git
+  revision: 1fa9a6e8d53ce905ad3d3d4e97180d49450258d4
+  branch: 3-0-stable
+  specs:
+    spree_travel_tour (3.0.0)
+      spree_core (~> 3.0.0)
+      spree_travel_core (~> 3.0.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: b156e0a211ab3b0ffcc0c2544ea6c4366bcc45fe
   branch: 3-0-stable
@@ -69,45 +120,6 @@ GIT
       multi_json
       spree_core (~> 3.0.0)
 
-PATH
-  remote: /home/raul/work/spree_travel/spree_travel_car
-  specs:
-    spree_travel_car (3.0.0)
-      spree_core (~> 3.0.0)
-      spree_travel_core
-
-PATH
-  remote: /home/raul/work/spree_travel/spree_travel_core
-  specs:
-    spree_travel_core (3.0.0)
-      spree (~> 3.0.0)
-
-PATH
-  remote: /home/raul/work/spree_travel/spree_travel_cruise
-  specs:
-    spree_travel_cruise (3.0.0)
-      spree_core (~> 3.0.0)
-
-PATH
-  remote: /home/raul/work/spree_travel/spree_travel_hotel
-  specs:
-    spree_travel_hotel (3.0.0)
-      spree_core (~> 3.0.0)
-
-PATH
-  remote: /home/raul/work/spree_travel/spree_travel_sample
-  specs:
-    spree_travel_sample (3.0.0)
-      colored
-      spree_core (~> 3.0.0)
-
-PATH
-  remote: /home/raul/work/spree_travel/spree_travel_tour
-  specs:
-    spree_travel_tour (3.0.0)
-      spree_core (~> 3.0.0)
-      spree_travel_core (~> 3.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -155,7 +167,7 @@ GEM
       activerecord (>= 3.0)
     addressable (2.4.0)
     arel (6.0.3)
-    autoprefixer-rails (6.4.0.2)
+    autoprefixer-rails (6.4.0.3)
       execjs
     awesome_nested_set (3.0.3)
       activerecord (>= 4.0.0, < 5)
@@ -258,6 +270,7 @@ GEM
       mimemagic (= 0.3.0)
     paranoia (2.1.5)
       activerecord (~> 4.0)
+    pg (0.18.4)
     pkg-config (1.1.7)
     polyamorous (1.3.1)
       activerecord (>= 3.0)
@@ -329,7 +342,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.11)
     state_machines (0.4.0)
     state_machines-activemodel (0.4.0)
       activemodel (>= 4.1, < 5.1)
@@ -374,6 +386,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rails (= 4.2.7.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -386,10 +399,12 @@ DEPENDENCIES
   spree_travel_sample!
   spree_travel_tour!
   spring
-  sqlite3
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+RUBY VERSION
+   ruby 2.2.2p95
 
 BUNDLED WITH
    1.12.5
